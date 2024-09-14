@@ -1,0 +1,32 @@
+.rounded-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 0);
+}
+
+.button-style {
+    -fx-background-color: #c5d8ff;
+}
+
+.perfil-vbox {
+    -fx-border-width: 5;
+    -fx-border-color: #d1dcff;
+    -fx-border-radius: 20;
+
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 0);
+    -fx-padding: 10;
+}
+
+.nome-label {
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #283548;
+}
+
+.imagem-pane {
+    -fx-background-color: grey;
+    -fx-background-radius: 100 100 100 100;
+}
+
