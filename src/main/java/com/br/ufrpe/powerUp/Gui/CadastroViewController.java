@@ -1,7 +1,6 @@
 package com.br.ufrpe.powerUp.Gui;
 
 import com.br.ufrpe.powerUp.Dados.Exceptions.CJEException;
-import com.br.ufrpe.powerUp.Dados.Exceptions.CNException;
 import com.br.ufrpe.powerUp.Gui.Helpers.BasicController;
 import com.br.ufrpe.powerUp.Negocios.PerfilController;
 import javafx.event.ActionEvent;
@@ -17,8 +16,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -26,7 +23,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Objects;
-import java.util.concurrent.Flow;
 
 public class CadastroViewController extends BasicController {
     @FXML
@@ -102,7 +98,7 @@ public class CadastroViewController extends BasicController {
             if (caminhoFoto != null)
                 PerfilController.criarPerfil(nome, caminhoFoto);
             else
-                PerfilController.criarPerfil(nome, getClass().getResource("/Images/default.png").toString());
+                PerfilController.criarPerfil(nome, getClass().getResource("/Images/fotoPerfil/zDefault.png").toString());
 
 
             voltarOnAction(event);

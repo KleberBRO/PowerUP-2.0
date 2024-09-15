@@ -10,7 +10,7 @@ public class Perfil {
 
     public Perfil(String nome) {
         this.nome = nome;
-        this.caminhoImagem = "/Images/default.png";
+        this.caminhoImagem = "/Images/fotoPerfil/zDefault.png";
     }
 
     public Perfil(String nome, String caminho) {

@@ -30,3 +30,11 @@
     -fx-background-radius: 100 100 100 100;
 }
 
+.button-entered {
+    -fx-background-color: #00167a;
+}
+
+.button-exited {
+    -fx-background-color:  #2950ff;
+}
+
