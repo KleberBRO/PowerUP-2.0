@@ -37,7 +37,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Button fx:id="buttonPerfil" mnemonicParsing="false" onAction="#bPerfilOnAction" onMouseEntered="#buttonMouseEntered" onMouseExited="#buttonMouseExited" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Perfil" textFill="WHITE">
+                  <Button fx:id="buttonPerfil" mnemonicParsing="false" onAction="#bPerfilOnAction" onMouseEntered="#perfilMouseEntered" onMouseExited="#perfilMouseExited" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Perfil" textFill="WHITE">
                      <padding>
                         <Insets bottom="20.0" top="20.0" />
                      </padding>
@@ -47,6 +47,17 @@
                      <VBox.margin>
                         <Insets top="50.0" />
                      </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="buttonAtividades" mnemonicParsing="false" onAction="#bAtividadesOnAction" onMouseEntered="#atividadesMouseEntered" onMouseExited="#atividadesMouseExited" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Atividades" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>

@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
@@ -45,5 +46,15 @@ public abstract class BasicController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+    }
+
+    protected void buttonMouseEntered(Button button) {
+        button.getStyleClass().remove("button-exited");
+        button.getStyleClass().add("button-entered");
+    }
+
+    protected void buttonMouseExited(Button button) {
+        button.getStyleClass().remove("button-entered");
+        button.getStyleClass().add("button-exited");
     }
 }

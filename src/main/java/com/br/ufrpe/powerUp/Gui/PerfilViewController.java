@@ -45,19 +45,32 @@ public class PerfilViewController extends BasicController implements PerfilContr
     }
 
     @FXML
+    private void bAtividadesOnAction(ActionEvent event) throws IOException {
+        criarCena(event, "/Views/atividadesView.fxml", this);
+    }
+
+    @FXML
     private void bAtividadesOnAction() {
 
     }
 
     @FXML
-    private void buttonMouseEntered() {
-        buttonConfig.getStyleClass().remove("button-exited");
-        buttonConfig.getStyleClass().add("button-entered");
+    private void atividadesMouseEntered() {
+        buttonMouseEntered(buttonAtividades);
     }
 
     @FXML
-    private void buttonMouseExited() {
-        buttonConfig.getStyleClass().remove("button-entered");
-        buttonConfig.getStyleClass().add("button-exited");
+    private void atividadesMouseExited() {
+        buttonMouseExited(buttonAtividades);
+    }
+
+    @FXML
+    private void configMouseEntered() {
+        buttonMouseEntered(buttonConfig);
+    }
+
+    @FXML
+    private void configMouseExited() {
+        buttonMouseExited(buttonConfig);
     }
 }

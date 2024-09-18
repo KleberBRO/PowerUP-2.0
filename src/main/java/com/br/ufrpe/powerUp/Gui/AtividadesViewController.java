@@ -9,13 +9,13 @@ import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class ConfigViewController extends BasicController implements PerfilControllerInterface {
+public class AtividadesViewController extends BasicController implements PerfilControllerInterface {
+    @FXML
+    private Button buttonConfig;
     @FXML
     private Button buttonPerfil;
-    @FXML
-    private Button buttonAtividades;
 
-    PerfilController perfilController;
+    private PerfilController perfilController;
 
     @Override
     public void setPerfilController(PerfilController perfilController) {
@@ -33,18 +33,8 @@ public class ConfigViewController extends BasicController implements PerfilContr
     }
 
     @FXML
-    private void bAtividadesOnAction(ActionEvent event) throws IOException {
-        criarCena(event, "/Views/atividadesView.fxml", this);
-    }
-
-    @FXML
-    private void atividadesMouseEntered() {
-        buttonMouseEntered(buttonAtividades);
-    }
-
-    @FXML
-    private void atividadesMouseExited() {
-        buttonMouseExited(buttonAtividades);
+    private void bConfigOnAction (ActionEvent event) throws IOException {
+        criarCena(event, "/Views/ConfigView.fxml", this);
     }
 
     @FXML
@@ -57,4 +47,13 @@ public class ConfigViewController extends BasicController implements PerfilContr
         buttonMouseExited(buttonPerfil);
     }
 
+    @FXML
+    private void configMouseEntered() {
+        buttonMouseEntered(buttonConfig);
+    }
+
+    @FXML
+    private void configMouseExited() {
+        buttonMouseExited(buttonConfig);
+    }
 }
