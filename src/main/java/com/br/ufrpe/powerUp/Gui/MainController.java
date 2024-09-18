@@ -86,7 +86,7 @@ public class MainController extends BasicController {
                         }
                     });
                     vBox.getChildren().add(imagePane);
-                } else {
+                } else { // editar false
                     vBox.setCursor(Cursor.HAND);
                     vBox.setOnMouseClicked(event -> logarPerfil(event, nome));
                 }

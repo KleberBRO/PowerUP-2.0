@@ -4,9 +4,11 @@ import com.br.ufrpe.powerUp.Dados.Exceptions.CJEException;
 import com.br.ufrpe.powerUp.Dados.Exceptions.CNException;
 import com.br.ufrpe.powerUp.Dados.RepositorioPerfis;
 import com.br.ufrpe.powerUp.Negocios.Beans.Perfil;
+import lombok.Getter;
 
 import java.util.ArrayList;
 
+@Getter
 public class PerfilController {
     private Perfil perfil;
     private static RepositorioPerfis repo = RepositorioPerfis.getInstance();
