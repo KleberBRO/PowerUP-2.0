@@ -51,7 +51,7 @@
                         <Cursor fx:constant="DEFAULT" />
                      </cursor>
                   </Button>
-                  <Button fx:id="buttonAtividades" mnemonicParsing="false" onAction="#bAtividadesOnAction" onMouseEntered="#atividadesMouseEntered" onMouseExited="#atividadesMouseExited" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Atividades" textFill="WHITE">
+                  <Button fx:id="buttonSemana" mnemonicParsing="false" onAction="#bSemanaOnAction" onMouseEntered="#semanaMouseEntered" onMouseExited="#semanaMouseEntered" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Semana" textFill="WHITE">
                      <padding>
                         <Insets bottom="20.0" top="20.0" />
                      </padding>
@@ -62,7 +62,18 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="buttonConfig" mnemonicParsing="false" onAction="#bConfigOnAction" onMouseEntered="#configMouseEntered" onMouseExited="#configMouseExited" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Configurações" textFill="WHITE">
+                  <Button fx:id="buttonAtividades" mnemonicParsing="false" onAction="#bAtividadesOnAction" onMouseEntered="#atividadesMouseEntered" onMouseExited="#atividadesMouseEntered" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Atividades" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="buttonConfig" mnemonicParsing="false" onAction="#bConfigOnAction" onMouseEntered="#configMouseEntered" onMouseExited="#configMouseEntered" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Configurações" textFill="WHITE">
                      <padding>
                         <Insets bottom="20.0" top="20.0" />
                      </padding>

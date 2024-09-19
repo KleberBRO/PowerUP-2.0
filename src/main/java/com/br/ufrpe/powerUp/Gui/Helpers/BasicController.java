@@ -3,6 +3,7 @@ package com.br.ufrpe.powerUp.Gui.Helpers;
 import com.br.ufrpe.powerUp.Dados.Exceptions.CNException;
 import com.br.ufrpe.powerUp.Negocios.PerfilController;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -48,13 +49,33 @@ public abstract class BasicController {
         stage.show();
     }
 
-    protected void buttonMouseEntered(Button button) {
-        button.getStyleClass().remove("button-exited");
-        button.getStyleClass().add("button-entered");
+    protected void buttonMouseInteract(Button button) {
+        if (button.getStyleClass().contains("button-exited")) {
+            button.getStyleClass().remove("button-exited");
+            button.getStyleClass().add("button-entered");
+        } else {
+            button.getStyleClass().remove("button-entered");
+            button.getStyleClass().add("button-exited");
+        }
     }
 
-    protected void buttonMouseExited(Button button) {
-        button.getStyleClass().remove("button-entered");
-        button.getStyleClass().add("button-exited");
+    @FXML
+    protected void bPerfilOnAction(ActionEvent event) throws IOException {
+        criarCena(event, "/Views/PerfilView.fxml", this);
+    }
+
+    @FXML
+    protected void bAtividadesOnAction(ActionEvent event) throws IOException {
+        criarCena(event, "/Views/atividadesView.fxml", this);
+    }
+
+    @FXML
+    protected void bConfigOnAction (ActionEvent event) throws IOException {
+        criarCena(event, "/Views/ConfigView.fxml", this);
+    }
+
+    @FXML
+    protected void bSemanaOnAction(ActionEvent event) throws IOException {
+        criarCena(event, "/Views/SemanaView.fxml", this);
     }
 }

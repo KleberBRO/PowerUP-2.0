@@ -18,6 +18,9 @@ public class PerfilViewController extends BasicController implements PerfilContr
     @FXML
     private Button buttonAtividades;
     @FXML
+    private Button buttonSemana;
+
+    @FXML
     private Label labelNome;
     @FXML
     private HBox hBoxPerfil;
@@ -39,38 +42,20 @@ public class PerfilViewController extends BasicController implements PerfilContr
         labelNome.setText(perfilController.getPerfil().getNome());
     }
 
-    @FXML
-    private void bConfigOnAction (ActionEvent event) throws IOException {
-        criarCena(event, "/Views/ConfigView.fxml", this);
-    }
-
-    @FXML
-    private void bAtividadesOnAction(ActionEvent event) throws IOException {
-        criarCena(event, "/Views/atividadesView.fxml", this);
-    }
-
-    @FXML
-    private void bAtividadesOnAction() {
-
-    }
 
     @FXML
     private void atividadesMouseEntered() {
-        buttonMouseEntered(buttonAtividades);
-    }
-
-    @FXML
-    private void atividadesMouseExited() {
-        buttonMouseExited(buttonAtividades);
+        buttonMouseInteract(buttonAtividades);
     }
 
     @FXML
     private void configMouseEntered() {
-        buttonMouseEntered(buttonConfig);
+        buttonMouseInteract(buttonConfig);
     }
 
     @FXML
-    private void configMouseExited() {
-        buttonMouseExited(buttonConfig);
+    private void semanaMouseEntered() {
+        buttonMouseInteract(buttonSemana);
     }
+
 }

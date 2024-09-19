@@ -14,6 +14,8 @@ public class ConfigViewController extends BasicController implements PerfilContr
     private Button buttonPerfil;
     @FXML
     private Button buttonAtividades;
+    @FXML
+    private Button buttonSemana;
 
     PerfilController perfilController;
 
@@ -28,33 +30,18 @@ public class ConfigViewController extends BasicController implements PerfilContr
     }
 
     @FXML
-    private void bPerfilOnAction(ActionEvent event) throws IOException {
-        criarCena(event, "/Views/PerfilView.fxml", this);
-    }
-
-    @FXML
-    private void bAtividadesOnAction(ActionEvent event) throws IOException {
-        criarCena(event, "/Views/atividadesView.fxml", this);
-    }
-
-    @FXML
     private void atividadesMouseEntered() {
-        buttonMouseEntered(buttonAtividades);
-    }
-
-    @FXML
-    private void atividadesMouseExited() {
-        buttonMouseExited(buttonAtividades);
+        buttonMouseInteract(buttonAtividades);
     }
 
     @FXML
     private void perfilMouseEntered() {
-        buttonMouseEntered(buttonPerfil);
+        buttonMouseInteract(buttonPerfil);
     }
 
     @FXML
-    private void perfilMouseExited() {
-        buttonMouseExited(buttonPerfil);
+    private void semanaMouseEntered() {
+        buttonMouseInteract(buttonSemana);
     }
 
 }

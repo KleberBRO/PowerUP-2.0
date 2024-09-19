@@ -3,19 +3,16 @@ package com.br.ufrpe.powerUp.Gui;
 import com.br.ufrpe.powerUp.Gui.Helpers.BasicController;
 import com.br.ufrpe.powerUp.Gui.Helpers.PerfilControllerInterface;
 import com.br.ufrpe.powerUp.Negocios.PerfilController;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-import java.io.IOException;
-
-public class AtividadesViewController extends BasicController implements PerfilControllerInterface {
+public class SemanaViewController extends BasicController implements PerfilControllerInterface {
     @FXML
     private Button buttonConfig;
     @FXML
     private Button buttonPerfil;
     @FXML
-    private Button buttonSemana;
+    private Button buttonAtividades;
 
     private PerfilController perfilController;
 
@@ -35,12 +32,12 @@ public class AtividadesViewController extends BasicController implements PerfilC
     }
 
     @FXML
-    private void configMouseEntered() {
-        buttonMouseInteract(buttonConfig);
+    private void atividadesMouseEntered() {
+        buttonMouseInteract(buttonAtividades);
     }
 
     @FXML
-    private void semanaMouseEntered() {
-        buttonMouseInteract(buttonSemana);
+    private void configMouseEntered() {
+        buttonMouseInteract(buttonConfig);
     }
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.ufrpe.powerUp.Gui.AtividadesViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.ufrpe.powerUp.Gui.SemanaViewController">
    <children>
       <HBox layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -51,18 +51,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="buttonSemana" mnemonicParsing="false" onAction="#bSemanaOnAction" onMouseEntered="#semanaMouseEntered" onMouseExited="#semanaMouseEntered" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Semana" textFill="WHITE">
-                     <padding>
-                        <Insets bottom="20.0" top="20.0" />
-                     </padding>
-                     <font>
-                        <Font name="Arial Bold" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button mnemonicParsing="false" prefWidth="240.0" style="-fx-background-color: #6682ff;" text="Atividades" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefWidth="240.0" style="-fx-background-color: #6682ff;" text="Semana" textFill="WHITE">
                      <padding>
                         <Insets bottom="20.0" top="20.0" />
                      </padding>
@@ -71,6 +60,17 @@
                      </font>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="buttonAtividades" mnemonicParsing="false" onAction="#bAtividadesOnAction" onMouseEntered="#atividadesMouseEntered" onMouseExited="#atividadesMouseEntered" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Atividades" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
                   <Button fx:id="buttonConfig" mnemonicParsing="false" onAction="#bConfigOnAction" onMouseEntered="#configMouseEntered" onMouseExited="#configMouseEntered" prefWidth="240.0" styleClass="button-exited" stylesheets="@Styles.css" text="Configurações" textFill="WHITE">
